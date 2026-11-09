@@ -1,0 +1,65 @@
+// DMS Window Rules - Managed by Dux Modular Shell
+// Do not edit manually - changes may be overwritten
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    open-floating true
+}
+
+// @id=wr_1793037767592304819 @name=File Manager
+window-rule {
+    match app-id="^dev.duxlabs.files$"
+    open-floating true
+    default-column-width { fixed 1350; }
+    default-window-height { fixed 900; }
+}
+
+// @id=wr_1793038099047331697 @name=Terminal
+window-rule {
+    match app-id="^org.gnome.Ptyxis$"
+}
+
+// @id=wr_1793782758685977189 @name=dev.duxlabs.calendar
+window-rule {
+    match app-id="^dev.duxlabs.calendar$"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 800; }
+    background-effect {
+        blur true
+    }
+}
+
+// @id=wr_1794047324874410085 @name=com.vysp3r.ProtonPlus
+window-rule {
+    match app-id="^com.vysp3r.ProtonPlus$"
+    open-floating true
+}
+
+// @id=wr_1794047451327256209 @name=com.vysp3r.ProtonPlus
+window-rule {
+    match app-id="^com.vysp3r.ProtonPlus$"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 600; }
+}
+
+// @id=wr_1794134459597457572 @name=com.mitchellh.ghostty
+window-rule {
+    match app-id="^com.mitchellh.ghostty$"
+    opacity 0.90
+    open-floating true
+    default-column-width { fixed 1100; }
+    default-window-height { fixed 800; }
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+// @id=dms-window-opaque @name=DMS Window Opaque
+window-rule {
+    match app-id="^(dev\\.duxlabs\\.shell|com\\.danklinux\\.dms)$"
+    opacity 1.00
+}

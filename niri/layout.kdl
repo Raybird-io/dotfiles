@@ -1,0 +1,45 @@
+// ─── Layout ────────────────────────────────────────────────
+// https://github.com/niri-wm/niri/wiki/Configuration:-Layout
+prefer-no-csd
+layout {
+    // Sizing
+    //gaps 15
+    //center-focused-column "on-overflow"
+    always-center-single-column
+
+    default-column-width { proportion 0.34; }
+
+    struts {
+    	top 64
+    	bottom 64
+        left 64
+        right 64
+    }
+
+    // Appearance
+    background-color "transparent"
+
+    border {
+        on
+        width 1
+        inactive-color "#8080804d"
+    }
+
+    focus-ring {
+        off
+        width 1
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 4
+        offset x=0 y=6
+        draw-behind-window false
+    }
+}
+
+// ─── Overview ──────────────────────────────────────────────
+overview {
+    workspace-shadow { off; }
+}
