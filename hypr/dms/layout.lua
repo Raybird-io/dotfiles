@@ -2,17 +2,10 @@
 
 hl.config({
 	general = {
-		gaps_in = 6,
-		gaps_out = 50,
-		border_size = 1,
-		resize_on_border = true,
-		layout = "scrolling",
-	},
-	scrolling = {
-		direction = "right",
-		column_width = 0.43,
-		fullscreen_on_one_column = false,
-		follow_focus = 1,
+		gaps_in = 4,
+		gaps_out = 4,
+		border_size = 2,
+		resize_on_border = false,
 	},
 	decoration = {
 		rounding = 16,
@@ -21,6 +14,9 @@ hl.config({
 		},
 	},
 })
+
+-- Hand-written or migrated hyprland.lua often lacks this; tweened island lifts misplace the drag pointer.
+hl.layer_rule({ match = { namespace = "^dms:dankisland$" }, no_anim = true })
 
 hl.layer_rule({
 	match = { namespace = "^dms:bar$" },
