@@ -78,8 +78,7 @@ require("dms.binds-user")
 require("dms.windowrules")
 
 -- Symlinks to override default Hyprland modules (binds, animation, monitor, workspaces, layout, rules)
-require("animations")
-require("layout")
+require("animation")
+require("monitor_layout")
 require("rules")
 require("binds")
- 
