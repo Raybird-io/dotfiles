@@ -143,7 +143,7 @@ binds {
     Mod+Shift+P { power-off-monitors; }
     Mod+Shift+E { quit; }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ptyxis"; }
     XF86TouchpadToggle repeat=false allow-when-locked=true { spawn "niri" "msg" "action" "toggle-touchpad"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+O repeat=false { toggle-overview; }

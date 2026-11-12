@@ -64,19 +64,35 @@ softness = 30
 offset_x = 0
 offset_y = 6
 
-# ─── Animations (same springs as Niri) ─────────────────────
-# Format: "spring:<damping-ratio>,<stiffness>"
+[appearance.blur]
+optimized = false   # blur what's actually behind, not just the wallpaper
+
+
+# ─── Animations: fast, smooth, almost no bounce ────────────
+# "spring:<damping>,<stiffness>": damping 1 = no bounce, higher stiffness = quicker
 [animation.windows_in]
-curve = "spring:0.65,1000"
+style = "popin"
+scale = 0.94                 # grows slightly from 94% while fading in
+curve = "spring:1.0,1100"
 
 [animation.windows_out]
-curve = "spring:1.0,1200"
+style = "popin"
+scale = 0.96                 # shrinks a touch while fading out
+curve = "spring:1.0,1600"    # closing should feel quicker than opening
 
 [animation.windows_move]
-curve = "spring:0.7,900"
+curve = "spring:0.92,1000"   # a hint of life when windows slide
 
 [animation.windows_resize]
-curve = "spring:0.9,900"
+curve = "spring:1.0,1100"
 
 [animation.workspaces]
-curve = "spring:0.75,900"
+style = "slide"
+curve = "spring:1.0,1000"
+
+[animation.overview]
+curve = "spring:1.0,1000"
+workspace_curve = "spring:1.0,1100"
+
+[animation.border]
+curve = "spring:1.0,1200"

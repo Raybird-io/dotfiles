@@ -5,6 +5,8 @@
 
 # Apps
 "Mod+T" = "spawn ptyxis"
+"Mod+B" = "spawn xdg-open https://"
+"Mod+E" = "spawn xdg-open ."
 
 # Dux Shell
 "Mod+Space"    = { action = "spawn dms ipc call spotlight toggle", repeat = false }
@@ -26,8 +28,8 @@
 
 # Windows
 "Mod+Q"       = "window-close"
-"Mod+F"       = "window-toggle-maximize"
-"Mod+Shift+F" = "window-toggle-fullscreen"
+"Mod+MouseMiddle"       = "window-toggle-maximize"
+"Mod+Shift+MouseMiddle" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+Shift+V" = "window-toggle-floating"
 "Mod+R"       = "window-cycle-primary-extent"
 "Mod+C"       = "column-center"
@@ -50,12 +52,14 @@
 # Overview
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
 
+# Switch monitor
+"Alt+Tab"       = "output-focus-next"
+
 # Mouse wheel: workspaces, and Shift to move through the strip
-"Mod+WheelUp"         = { action = "workspace-previous", cooldown_ms = 150 }
-"Mod+WheelDown"       = { action = "workspace-next", cooldown_ms = 150 }
-"Mod+Shift+WheelUp"   = { action = "window-focus-previous", cooldown_ms = 150 }
-"Mod+Shift+WheelDown" = { action = "window-focus-next", cooldown_ms = 150 }
-"Mod+MouseMiddle"     = "layout-scroll-drag"
+"Mod+Shift+WheelUp"         = { action = "workspace-previous", cooldown_ms = 150 }
+"Mod+Shift+WheelDown"       = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+WheelUp"   = { action = "window-focus-previous", cooldown_ms = 150 }
+"Mod+WheelDown" = { action = "window-focus-next", cooldown_ms = 150 }
 
 # Workspaces
 "Mod+1" = "workspace-switch 1"
