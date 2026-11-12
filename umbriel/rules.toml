@@ -1,0 +1,59 @@
+# ─── Window rules (same as niri/rules.kdl) ─────────────────
+# Later rules win when two set the same thing.
+
+# Small tools: float
+[[window_rule]]
+match.app_id = ["^org\\.gnome\\.Calculator$", "^gnome-calculator$", "^xdg-desktop-portal$"]
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^io\\.github\\.kolunmi\\.Bazaar$"
+default_floating = true
+default_floating_size_px = { width = 900, height = 900 }
+
+# Settings-style apps: tile at 40%
+[[window_rule]]
+match.app_id = ["^pavucontrol$", "^nm-connection-editor$"]
+default_floating = false
+default_scrolling_extent = 0.4
+
+# Picture-in-Picture and Zoom: float
+[[window_rule]]
+match.app_id = "firefox$"
+match.title = "^Picture-in-Picture$"
+default_floating = true
+
+[[window_rule]]
+match.app_id = "^zoom"
+default_floating = true
+
+# ─── Steam ─────────────────────────────────────────────────
+# Pop-ups float...
+[[window_rule]]
+match.app_id = "^steam$"
+default_floating = true
+
+# ...but the main "Steam" window tiles
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^Steam$"
+default_floating = false
+
+# Notification toasts: bottom-right, don't steal focus
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^notificationtoasts_\\d+_desktop$"
+default_position = { x = 10, y = 10, anchor = "bottom_right" }
+default_focused = false
+
+# Games: always on the ultrawide, with VRR
+[[window_rule]]
+match.app_id = "^steam_app_"
+default_output = "DP-1"
+vrr = "always"
+
+# ─── Dux Shell panels: blur behind them ────────────────────
+[[layer_rule]]
+match.namespace = "^dms:"
+blur = true
+blur_ignore_alpha = 0.5
