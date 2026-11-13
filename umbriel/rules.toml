@@ -33,11 +33,17 @@ match.app_id = "^dev\\.duxlabs\\.files$"
 default_floating = true
 default_floating_size_px = { width = 1100, height = 750 }
 
+# Dux Calendar: float
+[[window_rule]]
+match.app_id = "^dev\\.duxlabs\\.calendar$"
+default_floating = true
+default_floating_size_px = { width = 1100, height = 750 }
+
 # Terminal: float
 [[window_rule]]
 match.app_id = "^org\\.gnome\\.Ptyxis$"
 default_floating = true
-default_floating_size_px = { width = 1000, height = 650 }
+default_floating_size_px = { width = 800, height = 600 }
 
 # ─── Steam ─────────────────────────────────────────────────
 # Pop-ups float...
@@ -61,7 +67,6 @@ default_focused = false
 # Games: always on the ultrawide, with VRR
 [[window_rule]]
 match.app_id = "^steam_app_"
-default_output = "DP-1"
 vrr = "always"
 background_render = true
 

@@ -16,7 +16,7 @@
 "Mod+Comma"    = { action = "spawn dms ipc call settings toggle", repeat = false }
 "Mod+X"        = { action = "spawn dms ipc call powermenu toggle", repeat = false }
 "Mod+Alt+L"    = { action = "spawn dms ipc call lock lock", repeat = false }
-"Print"        = { action = "spawn dms screenshot", repeat = false }
+"Mod+S"        = { action = "spawn dms screenshot", repeat = false }
 
 # Volume, media and brightness (work on the lock screen too)
 "XF86AudioRaiseVolume"  = { action = "spawn dms ipc call audio increment 3", allow_when_locked = true }

@@ -5,10 +5,15 @@
 
 [include]
 files = [
-  "outputs.toml",
+  #"outputs.toml",
   "rules.toml",
   "keybinds.toml",
 ]
+
+[include.optional]
+files = [
+     "~/.local/state/umbriel/monitors.toml",
+     ]
 
 # ─── General ───────────────────────────────────────────────
 # Dux Shell starts itself through systemd, so nothing to autostart here.
