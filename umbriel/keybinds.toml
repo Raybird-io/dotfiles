@@ -46,8 +46,8 @@
 # Move windows (also across monitors)
 "Mod+Shift+Left"  = "window-move-or-output-left"
 "Mod+Shift+Right" = "window-move-or-output-right"
-"Mod+Shift+Up"    = "window-move-or-workspace-up"
-"Mod+Shift+Down"  = "window-move-or-workspace-down"
+"Mod+Ctrl+WheelUp"    = "window-move-or-workspace-up"
+"Mod+Ctrl+WheelDown"  = "window-move-or-workspace-down"
 
 # Overview
 "Mod+Tab" = { action = "overview-toggle", repeat = false }
